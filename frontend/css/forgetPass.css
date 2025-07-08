@@ -1,0 +1,82 @@
+/* General page style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Top title */
+.page-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #222;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Form container */
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Form labels */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="submit"],
+a.button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Back to login and home buttons */
+a.button {
+    display: inline-block;
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+a.button:hover {
+    background-color: #0074a6;
+}

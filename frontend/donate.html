@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/donate.css" >
+   
+
+</head>
+<body onload="window.alert('Page successfully loaded')"> <!--Event handler #4-->
+    <h3><i class="bi bi-person-rolodex"></i> Enter your profile information</h3>
+
+    <form id="custInfo" onsubmit="storeInfo(event)">
+        <fieldset>
+            <legend class="info">Information</legend>
+            First Name: <input type="text" id="firstName"><br>
+            Last Name: <input type="text" id="lastName"><br>
+            <p style="font-weight: bold;">Contact information</p>
+            <p>Email</p>
+            <input type="email" id="email" placeholder="Email">
+            <p>Phone Number</p>
+            <input type="tel" id="tel" placeholder="Phone Number">
+
+            <p>Kindly Transfer the total price to This Qr :</p>
+            <img class="qr-img" src="css/images/image5.jpg">
+
+            <p>Enter the Receipt Here</p><input type="file" id="receiptInput">
+        </fieldset>
+        <button type="submit">submit</button>
+        <input type="reset">
+    </form>
+
+    <script>
+        
+        //form validation #2-6
+        function validateForm(firstName, lastName, email, phone){
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            const phonePattern = /^[0-9]{10,15}$/;
+            if(firstName==null||firstName==""){
+                alert("First Name cant be blank");
+                return false;
+            }else if(lastName == null || lastName.trim() == "") {
+                alert("Last Name can't be blank");
+                return false;
+            }else if(!email.match(emailPattern)){
+                alert("Invalid email format.");
+                return false;
+            }else if(!phone.match(phonePattern)) {
+                alert("Phone number must be 10–15 digits and numbers only.");
+                return false;
+            }
+            return true;
+        }
+
+        //form validation #1
+        function storeInfo(event){
+            event.preventDefault();
+            const firstName=document.getElementById("firstName").value;
+            const lastName=document.getElementById("lastName").value;
+            var email=document.getElementById("email").value;
+            var phone=document.getElementById("tel").value;
+
+            var user=firstName.concat("",lastName);
+            if (!validateForm(firstName, lastName, email, phone)) return;
+
+            alert("Thankyou "+user+ ", We will deliver The food to your table soon "); //event handler #2
+            
+        }
+        
+    </script>
+</body>
+</html>

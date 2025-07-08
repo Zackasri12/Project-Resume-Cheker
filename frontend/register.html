@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo">My Resume</h2>
+       
+    </header>
+    <div class="container">
+        <div class="title">Registeration</div>
+        <form action="register.php" method="POST">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter full name" name="fullname" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="Enter username" name="username" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Enter email"name="email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Contact</span>
+                    <input type="tel" placeholder="Enter Contact number" name="contact" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter a password" name="password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm password</span>
+                    <input type="password" placeholder="Enter a password" name="confirm_password"  required>
+                </div>
+
+                
+                
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

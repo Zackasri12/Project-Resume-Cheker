@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+<html>
+<head>
+    <title>Resume Matcher</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🚀 AI-Powered <span>Resume Matcher</span></h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label>Job Description:</label><br>
+            <textarea name="job_description" rows="10" cols="80" required></textarea><br><br>
+            <label>Upload Resume (PDF):</label>
+            <input type="file" name="resume" accept=".pdf" required><br><br>
+            <button type="submit">Analyze Resume</button>
+        </form>
+    </div>
+</body>
+</html>

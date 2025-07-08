@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='analytics.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>🎯 Resume Analysis Result</h2>
+
+        <div class="card">
+            <p><strong>Overall Match Score:</strong></p>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: {{ result.overall_score }}%;">
+                    {{ result.overall_score }}%
+                </div>
+            </div>
+
+            <p><strong>✅ Matched Skills:</strong></p>
+            <ul class="tag-list">
+                {% for skill in result.keyword_matching %}
+                    <li class="tag success">{{ skill }}</li>
+                {% endfor %}
+            </ul>
+
+            <p><strong>❌ Missing Skills:</strong></p>
+            {% if result.missing_keywords %}
+                <ul class="tag-list">
+                    {% for skill in result.missing_keywords %}
+                        <li class="tag danger">{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="no-missing">✅ Great! No missing skills found.</p>
+            {% endif %}
+
+            <h3>🛠 Suggestions to Improve:</h3>
+            <ul>
+                {% for suggestion in result.suggestions %}
+                    <li>{{ suggestion }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- ✅ Back Button -->
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="http://localhost/myresume/frontend/home.php" class="back-button">← Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

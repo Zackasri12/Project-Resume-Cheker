@@ -1,0 +1,115 @@
+/* Font and base styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: url('images/image2.jpg') no-repeat center center fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Form Card */
+form {
+    background-color: #ffffff;
+    padding: 60px 80px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.4s ease;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+/* Inputs and Select */
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+    background-color: #f9fbfd;
+    color: #333;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #ffffff;
+}
+
+/* Button styles */
+button,
+a {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Submit button */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Cancel link */
+a {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+a:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        padding: 25px 20px;
+    }
+
+    button, a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

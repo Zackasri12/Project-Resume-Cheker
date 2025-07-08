@@ -1,0 +1,77 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(242, 227, 207);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #000000;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 25px 30px;
+    border-radius: 15px;
+    
+    width: 90%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+legend.info {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(30, 238, 86);
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+button[type="submit"],
+input[type="reset"]{
+    margin: 10px 10px 0 0;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+
+button:hover,
+input[type="reset"]:hover {
+    opacity: 0.85;
+}
+
+.qr-img{
+    width: 450px;
+}
