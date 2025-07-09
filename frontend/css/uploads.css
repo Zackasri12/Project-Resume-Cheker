@@ -1,0 +1,129 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url('images/image6.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    
+}
+
+.container {
+    background: rgba(250, 249, 249, 0.92);
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    animation: slideUp 0.6s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: #1e2a38;
+    margin-bottom: 25px;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    color: #2c3e50;
+}
+
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #dcdfe6;
+    border-radius: 10px;
+    background-color: #f9fbfd;
+    font-size: 15px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+textarea:focus,
+input[type="file"]:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #ffffff;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.premium-banner {
+    background-color: #ffecb3;
+    color: #6d4c41;
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+/* Fixed Back Button at Bottom Center */
+ .home-button {
+        display: inline-block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+        background-color: #2c80b4;
+    }
+}

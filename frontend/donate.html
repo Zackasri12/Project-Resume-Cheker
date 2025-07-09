@@ -1,75 +1,86 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/donate.css" >
-   
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donation Page</title>
+  <link rel="stylesheet" href="css/donate.css">
 </head>
-<body onload="window.alert('Page successfully loaded')"> <!--Event handler #4-->
-    <h3><i class="bi bi-person-rolodex"></i> Enter your profile information</h3>
+<body>
 
-    <form id="custInfo" onsubmit="storeInfo(event)">
-        <fieldset>
-            <legend class="info">Information</legend>
-            First Name: <input type="text" id="firstName"><br>
-            Last Name: <input type="text" id="lastName"><br>
-            <p style="font-weight: bold;">Contact information</p>
-            <p>Email</p>
-            <input type="email" id="email" placeholder="Email">
-            <p>Phone Number</p>
-            <input type="tel" id="tel" placeholder="Phone Number">
+  <!-- Navigation Header -->
+  <header class="header">
+    <nav class="navigation">
+      <a href="home.php" class="home-nav"> Home</a>
+    </nav>
+  </header>
 
-            <p>Kindly Transfer the total price to This Qr :</p>
-            <img class="qr-img" src="css/images/image5.jpg">
+  <!-- Donation Form Title -->
+  <h3><i class="bi bi-person-rolodex"></i> Enter your profile information</h3>
 
-            <p>Enter the Receipt Here</p><input type="file" id="receiptInput">
-        </fieldset>
-        <button type="submit">submit</button>
-        <input type="reset">
-    </form>
+  <!-- Donation Form -->
+  <form id="custInfo" onsubmit="storeInfo(event)">
+    <fieldset>
+      <legend class="info">Information</legend>
 
-    <script>
-        
-        //form validation #2-6
-        function validateForm(firstName, lastName, email, phone){
-            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-            const phonePattern = /^[0-9]{10,15}$/;
-            if(firstName==null||firstName==""){
-                alert("First Name cant be blank");
-                return false;
-            }else if(lastName == null || lastName.trim() == "") {
-                alert("Last Name can't be blank");
-                return false;
-            }else if(!email.match(emailPattern)){
-                alert("Invalid email format.");
-                return false;
-            }else if(!phone.match(phonePattern)) {
-                alert("Phone number must be 10–15 digits and numbers only.");
-                return false;
-            }
-            return true;
-        }
+      First Name: <input type="text" id="firstName"><br><br>
+      Last Name: <input type="text" id="lastName"><br><br>
 
-        //form validation #1
-        function storeInfo(event){
-            event.preventDefault();
-            const firstName=document.getElementById("firstName").value;
-            const lastName=document.getElementById("lastName").value;
-            var email=document.getElementById("email").value;
-            var phone=document.getElementById("tel").value;
+      <p style="font-weight: bold;">Contact Information</p>
+      <p>Email</p>
+      <input type="email" id="email" placeholder="Email"><br><br>
+      <p>Phone Number</p>
+      <input type="tel" id="tel" placeholder="Phone Number"><br><br>
 
-            var user=firstName.concat("",lastName);
-            if (!validateForm(firstName, lastName, email, phone)) return;
+      <p>Kindly transfer the total price to this QR:</p>
+      <img class="qr-img" src="css/images/image5.jpg" alt="QR Code"><br><br>
 
-            alert("Thankyou "+user+ ", We will deliver The food to your table soon "); //event handler #2
-            
-        }
-        
-    </script>
+      <p>Enter the receipt here:</p>
+      <input type="file" id="receiptInput">
+    </fieldset>
+
+    <button type="submit">Submit</button>
+    <input type="reset" value="Reset">
+  </form>
+
+  <!-- Styled Home Button -->
+  <a href="home.php" class="home-button">← Back to Home</a>
+
+  <!-- JavaScript for Form Validation -->
+  <script>
+    function validateForm(firstName, lastName, email, phone) {
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      const phonePattern = /^[0-9]{10,15}$/;
+
+      if (!firstName.trim()) {
+        alert("First Name can't be blank");
+        return false;
+      } else if (!lastName.trim()) {
+        alert("Last Name can't be blank");
+        return false;
+      } else if (!email.match(emailPattern)) {
+        alert("Invalid email format.");
+        return false;
+      } else if (!phone.match(phonePattern)) {
+        alert("Phone number must be 10–15 digits and numbers only.");
+        return false;
+      }
+      return true;
+    }
+
+    function storeInfo(event) {
+      event.preventDefault();
+      const firstName = document.getElementById("firstName").value;
+      const lastName = document.getElementById("lastName").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("tel").value;
+
+      const user = firstName + " " + lastName;
+
+      if (!validateForm(firstName, lastName, email, phone)) return;
+
+      alert("Thank you, " + user + "!");
+    }
+  </script>
 </body>
 </html>

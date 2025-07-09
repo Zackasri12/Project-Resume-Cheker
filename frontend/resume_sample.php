@@ -6,10 +6,7 @@ if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'user') {
     exit();
 }
 
-if ($_SESSION['payment_status'] !== 'paid') {
-    header("Location: payment.php");
-    exit();
-}
+
 
 $sample_dir = __DIR__ . "/samples/";
 $relative_path = "samples/";
@@ -48,3 +45,4 @@ $samples = is_dir($sample_dir)
     <a href="home.php" class="btn-back">← Back to Home</a>
 </body>
 </html>
+

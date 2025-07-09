@@ -3369,3 +3369,288 @@ GenerateContentResponse(
 2025-07-09 03:56:36,320 - INFO - 127.0.0.1 - - [09/Jul/2025 03:56:36] "GET /static/analytics.css HTTP/1.1" 200 -
 2025-07-09 03:56:36,898 - INFO - 127.0.0.1 - - [09/Jul/2025 03:56:36] "GET /static/images/image2.jpg HTTP/1.1" 200 -
 2025-07-09 03:56:37,100 - INFO - 127.0.0.1 - - [09/Jul/2025 03:56:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-09 04:12:40,570 - INFO - Gemini API configured.
+2025-07-09 04:12:40,815 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-09 04:12:40,816 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 04:12:40,821 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-09 04:12:41,592 - INFO - Gemini API configured.
+2025-07-09 04:12:41,619 - WARNING -  * Debugger is active!
+2025-07-09 04:12:41,621 - INFO -  * Debugger PIN: 103-112-051
+2025-07-09 04:13:30,745 - INFO - File saved to uploads\c6dc2be0-ec9a-4deb-bec0-f7bdb3d89e19_Blue And Pink Modern Graphic Designer Resume.pdf
+2025-07-09 04:13:30,745 - INFO - Converting PDF 'uploads\c6dc2be0-ec9a-4deb-bec0-f7bdb3d89e19_Blue And Pink Modern Graphic Designer Resume.pdf' to images...
+2025-07-09 04:13:30,746 - INFO - Opened PDF: uploads\c6dc2be0-ec9a-4deb-bec0-f7bdb3d89e19_Blue And Pink Modern Graphic Designer Resume.pdf with 1 pages.
+2025-07-09 04:13:31,117 - INFO - Saved image: pdf_images\page_1.jpg
+2025-07-09 04:13:31,118 - INFO - Processing: pdf_images\page_1.jpg as image
+2025-07-09 04:13:38,840 - INFO - Processing: None as text
+2025-07-09 04:13:42,716 - INFO - Text processing response: response:
+GenerateContentResponse(
+    done=True,
+    iterator=None,
+    result=protos.GenerateContentResponse({
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "```json\n{\n  \"overall_score\": 20,\n  \"keyword_matching\": [],\n  \"missing_keywords\": [\n    \"Accounts Payable\",\n    \"Accounts Receivable\",\n    \"Bookkeeping\",\n    \"General Ledger\",\n    \"Financial Statements\",\n    \"Reconciliation\",\n    \"Data Entry\",\n    \"Invoicing\",\n    \"Tax Payments\",\n    \"Filing Systems\",\n    \"Accounting Software\",\n    \"QuickBooks\",\n    \"Excel\",\n    \"Word\",\n    \"Accounting Principles\",\n    \"Financial Reporting\"\n  ],\n  \"suggestions\": [\n    \"This resume is for a Graphic Designer, not an Accounting Clerk.  The skills and experience are completely unrelated to the job description.\",\n    \"Create a new resume specifically tailored to the Accounting Clerk position.\",\n    \"Highlight relevant skills such as data entry, accounting software proficiency, and experience with financial processes.\",\n    \"Quantify accomplishments whenever possible (e.g., 'Increased efficiency by 15%').\",\n    \"Use keywords from the job description.\",\n    \"Remove irrelevant sections like 'Interests' and focus on professional experience and skills.\",\n    \"Rewrite the professional profile to be concise and impactful, focusing on accounting-related achievements.\"\n  ]\n}\n```\n"
+              }
+            ],
+            "role": "model"
+          },
+          "finish_reason": "STOP",
+          "avg_logprobs": -0.1070083973655564
+        }
+      ],
+      "usage_metadata": {
+        "prompt_token_count": 11136,
+        "candidates_token_count": 279,
+        "total_token_count": 11415
+      },
+      "model_version": "gemini-1.5-flash-002"
+    }),
+)
+2025-07-09 04:13:42,738 - INFO - Final analysis result: {'overall_score': 20, 'keyword_matching': [], 'missing_keywords': ['Accounts Payable', 'Accounts Receivable', 'Bookkeeping', 'General Ledger', 'Financial Statements', 'Reconciliation', 'Data Entry', 'Invoicing', 'Tax Payments', 'Filing Systems', 'Accounting Software', 'QuickBooks', 'Excel', 'Word', 'Accounting Principles', 'Financial Reporting'], 'suggestions': ['This resume is for a Graphic Designer, not an Accounting Clerk.  The skills and experience are completely unrelated to the job description.', 'Create a new resume specifically tailored to the Accounting Clerk position.', 'Highlight relevant skills such as data entry, accounting software proficiency, and experience with financial processes.', "Quantify accomplishments whenever possible (e.g., 'Increased efficiency by 15%').", 'Use keywords from the job description.', "Remove irrelevant sections like 'Interests' and focus on professional experience and skills.", 'Rewrite the professional profile to be concise and impactful, focusing on accounting-related achievements.']}
+2025-07-09 04:13:42,742 - INFO - 127.0.0.1 - - [09/Jul/2025 04:13:42] "POST / HTTP/1.1" 200 -
+2025-07-09 04:13:42,758 - INFO - 127.0.0.1 - - [09/Jul/2025 04:13:42] "[36mGET /static/analytics.css HTTP/1.1[0m" 304 -
+2025-07-09 04:13:42,950 - INFO - 127.0.0.1 - - [09/Jul/2025 04:13:42] "[36mGET /static/images/image2.jpg HTTP/1.1[0m" 304 -
+2025-07-09 04:18:40,238 - INFO - Gemini API configured.
+2025-07-09 04:18:40,274 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-09 04:18:40,275 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 04:18:40,280 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-09 04:18:41,060 - INFO - Gemini API configured.
+2025-07-09 04:18:41,087 - WARNING -  * Debugger is active!
+2025-07-09 04:18:41,089 - INFO -  * Debugger PIN: 103-112-051
+2025-07-09 04:19:11,305 - INFO - File saved to uploads\3ccf58a5-05d2-44cb-8346-227cfbcdb8ba_Blue And Pink Modern Graphic Designer Resume.pdf
+2025-07-09 04:19:11,305 - INFO - Converting PDF 'uploads\3ccf58a5-05d2-44cb-8346-227cfbcdb8ba_Blue And Pink Modern Graphic Designer Resume.pdf' to images...
+2025-07-09 04:19:11,306 - INFO - Opened PDF: uploads\3ccf58a5-05d2-44cb-8346-227cfbcdb8ba_Blue And Pink Modern Graphic Designer Resume.pdf with 1 pages.
+2025-07-09 04:19:11,678 - INFO - Saved image: pdf_images\page_1.jpg
+2025-07-09 04:19:11,679 - INFO - Processing: pdf_images\page_1.jpg as image
+2025-07-09 04:19:18,269 - INFO - Processing: None as text
+2025-07-09 04:19:21,981 - INFO - Text processing response: response:
+GenerateContentResponse(
+    done=True,
+    iterator=None,
+    result=protos.GenerateContentResponse({
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "```json\n{\n  \"overall_score\": 20,\n  \"keyword_matching\": [],\n  \"missing_keywords\": [\n    \"Accounts Payable\",\n    \"Accounts Receivable\",\n    \"Bookkeeping\",\n    \"General Ledger\",\n    \"Financial Reporting\",\n    \"Data Entry\",\n    \"Reconciliation\",\n    \"Invoice Processing\",\n    \"Spreadsheet Software (e.g., Excel)\",\n    \"Accounting Software (e.g., QuickBooks)\",\n    \"Tax Payments\",\n    \"Filing Systems\",\n    \"Auditing\",\n    \"Financial Statements\",\n    \"Accounting Principles\",\n    \"Cash Handling\",\n    \"Bank Reconciliation\"\n  ],\n  \"suggestions\": [\n    \"This resume is for a Graphic Designer, not an Accounting Clerk.  It needs to be completely rewritten to target accounting positions.\",\n    \"Highlight relevant skills and experience related to accounting, such as data entry, bookkeeping software proficiency, and experience with financial processes.\",\n    \"Quantify achievements whenever possible. Instead of 'Handled multiple digital accounts,' state how many accounts were handled and any positive outcomes.\",\n    \"Remove irrelevant sections like 'Expertise Skills' (unless those skills are relevant to accounting), 'Language,' and 'Interests.'\",\n    \"Focus on keywords from the job description. Use action verbs to describe responsibilities and accomplishments.\",\n    \"Create a targeted professional profile summarizing accounting-related skills and career goals.\",\n    \"Add a dedicated section detailing experience with accounting software and tools.\",\n    \"Consider adding a skills section specifically listing accounting-related software and skills.\"\n  ]\n}\n```\n"
+              }
+            ],
+            "role": "model"
+          },
+          "finish_reason": "STOP",
+          "avg_logprobs": -0.2307256210682004
+        }
+      ],
+      "usage_metadata": {
+        "prompt_token_count": 11146,
+        "candidates_token_count": 344,
+        "total_token_count": 11490
+      },
+      "model_version": "gemini-1.5-flash-002"
+    }),
+)
+2025-07-09 04:19:22,007 - INFO - Final analysis result: {'overall_score': 20, 'keyword_matching': [], 'missing_keywords': ['Accounts Payable', 'Accounts Receivable', 'Bookkeeping', 'General Ledger', 'Financial Reporting', 'Data Entry', 'Reconciliation', 'Invoice Processing', 'Spreadsheet Software (e.g., Excel)', 'Accounting Software (e.g., QuickBooks)', 'Tax Payments', 'Filing Systems', 'Auditing', 'Financial Statements', 'Accounting Principles', 'Cash Handling', 'Bank Reconciliation'], 'suggestions': ['This resume is for a Graphic Designer, not an Accounting Clerk.  It needs to be completely rewritten to target accounting positions.', 'Highlight relevant skills and experience related to accounting, such as data entry, bookkeeping software proficiency, and experience with financial processes.', "Quantify achievements whenever possible. Instead of 'Handled multiple digital accounts,' state how many accounts were handled and any positive outcomes.", "Remove irrelevant sections like 'Expertise Skills' (unless those skills are relevant to accounting), 'Language,' and 'Interests.'", 'Focus on keywords from the job description. Use action verbs to describe responsibilities and accomplishments.', 'Create a targeted professional profile summarizing accounting-related skills and career goals.', 'Add a dedicated section detailing experience with accounting software and tools.', 'Consider adding a skills section specifically listing accounting-related software and skills.']}
+2025-07-09 04:19:22,135 - ERROR - Error during resume analysis
+Traceback (most recent call last):
+  File "D:\Xampp\htdocs\myresume\backend\app.py", line 100, in index
+    log_resume_upload(user_id, filename, match_score, suggestion)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Xampp\htdocs\myresume\backend\app.py", line 24, in log_resume_upload
+    cursor.execute(query, (user_id, filename, match_score, suggestion))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asria\AppData\Local\Programs\Python\Python313\Lib\site-packages\mysql\connector\cursor_cext.py", line 328, in execute
+    prepared = self._connection.prepare_for_mysql(params)
+  File "C:\Users\asria\AppData\Local\Programs\Python\Python313\Lib\site-packages\mysql\connector\connection_cext.py", line 943, in prepare_for_mysql
+    result = self._cmysql.convert_to_mysql(*params)
+_mysql_connector.MySQLInterfaceError: Python type list cannot be converted
+2025-07-09 04:19:22,137 - INFO -  * Detected change in 'C:\\Users\\asria\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\mysql\\connector\\cursor_cext.py', reloading
+2025-07-09 04:19:22,139 - INFO - 127.0.0.1 - - [09/Jul/2025 04:19:22] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-07-09 04:19:22,139 - INFO -  * Detected change in 'C:\\Users\\asria\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\mysql\\connector\\connection_cext.py', reloading
+2025-07-09 04:19:24,267 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-09 04:19:25,042 - INFO - Gemini API configured.
+2025-07-09 04:19:25,069 - WARNING -  * Debugger is active!
+2025-07-09 04:19:25,071 - INFO -  * Debugger PIN: 103-112-051
+2025-07-09 04:19:55,801 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:19:55,802 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:19:56,216 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-09 04:19:57,045 - INFO - Gemini API configured.
+2025-07-09 04:19:57,076 - WARNING -  * Debugger is active!
+2025-07-09 04:19:57,078 - INFO -  * Debugger PIN: 103-112-051
+2025-07-09 04:20:20,041 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:20:20,041 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:20:20,041 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:20:20,207 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-09 04:20:21,078 - INFO - Gemini API configured.
+2025-07-09 04:20:21,108 - WARNING -  * Debugger is active!
+2025-07-09 04:20:21,110 - INFO -  * Debugger PIN: 103-112-051
+2025-07-09 04:20:45,676 - INFO - Gemini API configured.
+2025-07-09 04:20:45,716 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-09 04:20:45,717 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 04:20:45,722 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-09 04:20:46,543 - INFO - Gemini API configured.
+2025-07-09 04:20:46,573 - WARNING -  * Debugger is active!
+2025-07-09 04:20:46,576 - INFO -  * Debugger PIN: 103-112-051
+2025-07-09 04:21:17,905 - INFO - File saved to uploads\242427d9-4645-401f-bdce-ac02d6f108d2_Blue And Pink Modern Graphic Designer Resume.pdf
+2025-07-09 04:21:17,905 - INFO - Converting PDF 'uploads\242427d9-4645-401f-bdce-ac02d6f108d2_Blue And Pink Modern Graphic Designer Resume.pdf' to images...
+2025-07-09 04:21:17,906 - INFO - Opened PDF: uploads\242427d9-4645-401f-bdce-ac02d6f108d2_Blue And Pink Modern Graphic Designer Resume.pdf with 1 pages.
+2025-07-09 04:21:18,273 - INFO - Saved image: pdf_images\page_1.jpg
+2025-07-09 04:21:18,274 - INFO - Processing: pdf_images\page_1.jpg as image
+2025-07-09 04:21:24,627 - INFO - Processing: None as text
+2025-07-09 04:21:28,276 - INFO - Text processing response: response:
+GenerateContentResponse(
+    done=True,
+    iterator=None,
+    result=protos.GenerateContentResponse({
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "```json\n{\n  \"overall_score\": 20,\n  \"keyword_matching\": [],\n  \"missing_keywords\": [\n    \"Accounts Payable\",\n    \"Accounts Receivable\",\n    \"Bookkeeping\",\n    \"Data Entry\",\n    \"Financial Reporting\",\n    \"General Ledger\",\n    \"Invoice Processing\",\n    \"Reconciliation\",\n    \"QuickBooks\",\n    \"Sage\",\n    \"Microsoft Excel\",\n    \"Accounting Principles\",\n    \"Tax Payments\",\n    \"Filing Systems\",\n    \"Financial Statements\",\n    \"Spreadsheet Software\"\n  ],\n  \"suggestions\": [\n    \"This resume is for a graphic designer, not an accounting clerk.  The skills and experience are completely irrelevant to the job description.\",\n    \"Create a new resume tailored to the Accounting Clerk position.\",\n    \"Highlight relevant skills like data entry, accounting software proficiency (QuickBooks, Excel), experience with accounts payable/receivable, and knowledge of accounting principles.\",\n    \"Quantify accomplishments whenever possible (e.g., 'Processed X number of invoices per month').\",\n    \"Use action verbs to describe responsibilities (e.g., 'Managed,' 'Reconciled,' 'Prepared').\",\n    \"Remove irrelevant sections like 'Expertise Skills' and 'Interests' which are not related to accounting.\",\n    \"Add a summary/objective section that specifically targets the requirements of the Accounting Clerk role.\"\n  ]\n}\n```\n"
+              }
+            ],
+            "role": "model"
+          },
+          "finish_reason": "STOP",
+          "avg_logprobs": -0.11688946297697698
+        }
+      ],
+      "usage_metadata": {
+        "prompt_token_count": 11139,
+        "candidates_token_count": 311,
+        "total_token_count": 11450
+      },
+      "model_version": "gemini-1.5-flash-002"
+    }),
+)
+2025-07-09 04:21:28,299 - INFO - Final analysis result: {'overall_score': 20, 'keyword_matching': [], 'missing_keywords': ['Accounts Payable', 'Accounts Receivable', 'Bookkeeping', 'Data Entry', 'Financial Reporting', 'General Ledger', 'Invoice Processing', 'Reconciliation', 'QuickBooks', 'Sage', 'Microsoft Excel', 'Accounting Principles', 'Tax Payments', 'Filing Systems', 'Financial Statements', 'Spreadsheet Software'], 'suggestions': ['This resume is for a graphic designer, not an accounting clerk.  The skills and experience are completely irrelevant to the job description.', 'Create a new resume tailored to the Accounting Clerk position.', 'Highlight relevant skills like data entry, accounting software proficiency (QuickBooks, Excel), experience with accounts payable/receivable, and knowledge of accounting principles.', "Quantify accomplishments whenever possible (e.g., 'Processed X number of invoices per month').", "Use action verbs to describe responsibilities (e.g., 'Managed,' 'Reconciled,' 'Prepared').", "Remove irrelevant sections like 'Expertise Skills' and 'Interests' which are not related to accounting.", 'Add a summary/objective section that specifically targets the requirements of the Accounting Clerk role.']}
+2025-07-09 04:21:28,357 - INFO - 127.0.0.1 - - [09/Jul/2025 04:21:28] "POST / HTTP/1.1" 200 -
+2025-07-09 04:21:28,373 - INFO - 127.0.0.1 - - [09/Jul/2025 04:21:28] "[36mGET /static/analytics.css HTTP/1.1[0m" 304 -
+2025-07-09 04:21:28,581 - INFO - 127.0.0.1 - - [09/Jul/2025 04:21:28] "[36mGET /static/images/image2.jpg HTTP/1.1[0m" 304 -
+2025-07-09 04:26:19,708 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:26:19,708 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:26:22,072 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-09 04:26:22,920 - INFO - Gemini API configured.
+2025-07-09 04:26:22,951 - WARNING -  * Debugger is active!
+2025-07-09 04:26:22,953 - INFO -  * Debugger PIN: 103-112-051
+2025-07-09 04:32:03,191 - INFO - Gemini API configured.
+2025-07-09 04:32:03,228 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-09 04:32:03,228 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 04:32:03,233 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-09 04:32:04,008 - INFO - Gemini API configured.
+2025-07-09 04:32:04,038 - WARNING -  * Debugger is active!
+2025-07-09 04:32:04,041 - INFO -  * Debugger PIN: 103-112-051
+2025-07-09 04:34:41,094 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:34:41,130 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:34:41,131 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:34:41,342 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-09 04:34:42,158 - INFO - Gemini API configured.
+2025-07-09 04:34:42,188 - WARNING -  * Debugger is active!
+2025-07-09 04:34:42,192 - INFO -  * Debugger PIN: 103-112-051
+2025-07-09 04:35:23,478 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:35:23,478 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:35:23,479 - INFO -  * Detected change in 'D:\\Xampp\\htdocs\\myresume\\backend\\app.py', reloading
+2025-07-09 04:35:24,362 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-09 04:35:25,181 - INFO - Gemini API configured.
+2025-07-09 04:35:25,214 - WARNING -  * Debugger is active!
+2025-07-09 04:35:25,216 - INFO -  * Debugger PIN: 103-112-051
+2025-07-09 04:35:44,598 - INFO - Gemini API configured.
+2025-07-09 04:35:44,632 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-09 04:35:44,632 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 04:35:44,638 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-09 04:35:45,436 - INFO - Gemini API configured.
+2025-07-09 04:35:45,465 - WARNING -  * Debugger is active!
+2025-07-09 04:35:45,468 - INFO -  * Debugger PIN: 103-112-051
+2025-07-09 04:42:28,577 - INFO - File saved to uploads\05bc83fa-d120-41c2-a5d9-5ccabf0608fb_Blue And Pink Modern Graphic Designer Resume.pdf
+2025-07-09 04:42:28,577 - INFO - Converting PDF 'uploads\05bc83fa-d120-41c2-a5d9-5ccabf0608fb_Blue And Pink Modern Graphic Designer Resume.pdf' to images...
+2025-07-09 04:42:28,578 - INFO - Opened PDF: uploads\05bc83fa-d120-41c2-a5d9-5ccabf0608fb_Blue And Pink Modern Graphic Designer Resume.pdf with 1 pages.
+2025-07-09 04:42:28,938 - INFO - Saved image: pdf_images\page_1.jpg
+2025-07-09 04:42:28,939 - INFO - Processing: pdf_images\page_1.jpg as image
+2025-07-09 04:42:34,430 - INFO - Processing: None as text
+2025-07-09 04:42:38,116 - INFO - Text processing response: response:
+GenerateContentResponse(
+    done=True,
+    iterator=None,
+    result=protos.GenerateContentResponse({
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "```json\n{\n  \"overall_score\": 20,\n  \"keyword_matching\": [],\n  \"missing_keywords\": [\n    \"Accounts Payable\",\n    \"Accounts Receivable\",\n    \"Bookkeeping\",\n    \"Data Entry\",\n    \"Financial Reporting\",\n    \"General Ledger\",\n    \"Bank Reconciliation\",\n    \"Invoice Processing\",\n    \"Payroll\",\n    \"QuickBooks\",\n    \"Sage\",\n    \"Microsoft Excel\",\n    \"Accounting Principles\",\n    \"Financial Statements\",\n    \"Tax Payments\",\n    \"Filing System\",\n    \"Reconciliation\",\n    \"Auditing\",\n    \"Clerical Support\"\n  ],\n  \"suggestions\": [\n    \"This resume is for a graphic designer, not an accounting clerk.  The skills and experience are completely unrelated to the job description.\",\n    \"Create a new resume tailored to the Accounting Clerk position.\",\n    \"Highlight relevant skills like data entry, accounting software proficiency (QuickBooks, Excel), experience with accounts payable/receivable, and knowledge of accounting principles.\",\n    \"Quantify accomplishments whenever possible (e.g., 'Processed X number of invoices per month').\",\n    \"Use action verbs to describe responsibilities and achievements.\",\n    \"Remove irrelevant information like language skills and interests unless they are directly related to the job requirements.\"\n  ]\n}\n```\n"
+              }
+            ],
+            "role": "model"
+          },
+          "finish_reason": "STOP",
+          "avg_logprobs": -0.10475301580913997
+        }
+      ],
+      "usage_metadata": {
+        "prompt_token_count": 11160,
+        "candidates_token_count": 295,
+        "total_token_count": 11455
+      },
+      "model_version": "gemini-1.5-flash-002"
+    }),
+)
+2025-07-09 04:42:38,139 - INFO - AI analysis result: {'overall_score': 20, 'keyword_matching': [], 'missing_keywords': ['Accounts Payable', 'Accounts Receivable', 'Bookkeeping', 'Data Entry', 'Financial Reporting', 'General Ledger', 'Bank Reconciliation', 'Invoice Processing', 'Payroll', 'QuickBooks', 'Sage', 'Microsoft Excel', 'Accounting Principles', 'Financial Statements', 'Tax Payments', 'Filing System', 'Reconciliation', 'Auditing', 'Clerical Support'], 'suggestions': ['This resume is for a graphic designer, not an accounting clerk.  The skills and experience are completely unrelated to the job description.', 'Create a new resume tailored to the Accounting Clerk position.', 'Highlight relevant skills like data entry, accounting software proficiency (QuickBooks, Excel), experience with accounts payable/receivable, and knowledge of accounting principles.', "Quantify accomplishments whenever possible (e.g., 'Processed X number of invoices per month').", 'Use action verbs to describe responsibilities and achievements.', 'Remove irrelevant information like language skills and interests unless they are directly related to the job requirements.']}
+2025-07-09 04:42:38,198 - INFO - 127.0.0.1 - - [09/Jul/2025 04:42:38] "POST / HTTP/1.1" 200 -
+2025-07-09 04:42:38,209 - INFO - 127.0.0.1 - - [09/Jul/2025 04:42:38] "GET /static/analytics.css HTTP/1.1" 200 -
+2025-07-09 04:42:38,290 - INFO - 127.0.0.1 - - [09/Jul/2025 04:42:38] "GET /static/images/image2.jpg HTTP/1.1" 200 -
+2025-07-09 04:42:38,784 - INFO - 127.0.0.1 - - [09/Jul/2025 04:42:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-10 02:05:54,245 - INFO - Gemini API configured.
+2025-07-10 02:05:54,297 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-10 02:05:54,297 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-10 02:05:54,304 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-10 02:05:55,172 - INFO - Gemini API configured.
+2025-07-10 02:05:55,206 - WARNING -  * Debugger is active!
+2025-07-10 02:05:55,209 - INFO -  * Debugger PIN: 103-112-051
+2025-07-10 02:06:45,468 - INFO - File saved to uploads\d49db547-40ef-4766-87c1-5ef5f5bdbc33_Black White Minimalist CV Resume.pdf
+2025-07-10 02:06:45,468 - INFO - Converting PDF 'uploads\d49db547-40ef-4766-87c1-5ef5f5bdbc33_Black White Minimalist CV Resume.pdf' to images...
+2025-07-10 02:06:45,485 - INFO - Opened PDF: uploads\d49db547-40ef-4766-87c1-5ef5f5bdbc33_Black White Minimalist CV Resume.pdf with 1 pages.
+2025-07-10 02:06:45,862 - INFO - Saved image: pdf_images\page_1.jpg
+2025-07-10 02:06:45,863 - INFO - Processing: pdf_images\page_1.jpg as image
+2025-07-10 02:06:54,578 - INFO - Processing: None as text
+2025-07-10 02:06:57,695 - INFO - Text processing response: response:
+GenerateContentResponse(
+    done=True,
+    iterator=None,
+    result=protos.GenerateContentResponse({
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "```json\n{\n  \"overall_score\": 15,\n  \"keyword_matching\": [],\n  \"missing_keywords\": [\n    \"Acting\",\n    \"Performance\",\n    \"Memorization\",\n    \"Rehearsal\",\n    \"Research (for roles)\",\n    \"Working with directors/production teams\",\n    \"Communication\",\n    \"Speaking (projection, modulation)\",\n    \"Dancing\",\n    \"Singing\",\n    \"Physical feats (if applicable)\",\n    \"Stage work\",\n    \"Film/TV work\",\n    \"Voiceovers\",\n    \"Commercials\",\n    \"Extra work\"\n  ],\n  \"suggestions\": [\n    \"This resume is completely unsuitable for an acting position.  It focuses on graphic design.  The applicant needs to create a new resume highlighting acting experience, training, and skills relevant to the acting profession.\",\n    \"List all acting roles, including small parts, student films, theater productions, etc.\",\n    \"Quantify achievements in previous roles.  Instead of generic descriptions, provide specific examples of successful performances or contributions.\",\n    \"Highlight any relevant skills such as improvisation, voice training, dialect coaching, stage combat, etc.\",\n    \"Include a headshot or professional photograph.\",\n    \"Remove the graphic design-focused skills and experience.\",\n    \"Replace the references with those who can speak to your acting abilities.\",\n    \"Consider adding a portfolio link showcasing acting reels or headshots.\"\n  ]\n}\n```\n"
+              }
+            ],
+            "role": "model"
+          },
+          "finish_reason": "STOP",
+          "avg_logprobs": -0.2086406683771865
+        }
+      ],
+      "usage_metadata": {
+        "prompt_token_count": 2748,
+        "candidates_token_count": 318,
+        "total_token_count": 3066
+      },
+      "model_version": "gemini-1.5-flash-002"
+    }),
+)
+2025-07-10 02:06:57,719 - INFO - AI analysis result: {'overall_score': 15, 'keyword_matching': [], 'missing_keywords': ['Acting', 'Performance', 'Memorization', 'Rehearsal', 'Research (for roles)', 'Working with directors/production teams', 'Communication', 'Speaking (projection, modulation)', 'Dancing', 'Singing', 'Physical feats (if applicable)', 'Stage work', 'Film/TV work', 'Voiceovers', 'Commercials', 'Extra work'], 'suggestions': ['This resume is completely unsuitable for an acting position.  It focuses on graphic design.  The applicant needs to create a new resume highlighting acting experience, training, and skills relevant to the acting profession.', 'List all acting roles, including small parts, student films, theater productions, etc.', 'Quantify achievements in previous roles.  Instead of generic descriptions, provide specific examples of successful performances or contributions.', 'Highlight any relevant skills such as improvisation, voice training, dialect coaching, stage combat, etc.', 'Include a headshot or professional photograph.', 'Remove the graphic design-focused skills and experience.', 'Replace the references with those who can speak to your acting abilities.', 'Consider adding a portfolio link showcasing acting reels or headshots.']}
+2025-07-10 02:06:57,809 - INFO - 127.0.0.1 - - [10/Jul/2025 02:06:57] "POST / HTTP/1.1" 200 -
+2025-07-10 02:06:57,821 - INFO - 127.0.0.1 - - [10/Jul/2025 02:06:57] "[36mGET /static/analytics.css HTTP/1.1[0m" 304 -
+2025-07-10 02:06:57,879 - INFO - 127.0.0.1 - - [10/Jul/2025 02:06:57] "[36mGET /static/images/image2.jpg HTTP/1.1[0m" 304 -
+2025-07-10 02:06:58,203 - INFO - 127.0.0.1 - - [10/Jul/2025 02:06:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

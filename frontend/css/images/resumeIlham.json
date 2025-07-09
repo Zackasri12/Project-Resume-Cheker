@@ -1,0 +1,86 @@
+{
+  "selectedTemplate": 10,
+  "basics": {
+    "summaries": [
+      ""
+    ],
+    "name": "MUHAMMAD ILHAM BIN MOHD AMRI",
+    "email": "amtaro04@gmail.com",
+    "phone": "0106540107",
+    "location": {
+      "address": "Shah ALam, Selangor"
+    },
+    "website": "mycoolporfolio.com/ilham"
+  },
+  "education": [
+    {
+      "institution": "Sekolah Menengah Kebangsaan Seksyen 18",
+      "location": "Seksyen 18, Shah Alam",
+      "area": "Cybersecurity",
+      "studyType": "Computer Science",
+      "gpa": "3.90",
+      "startDate": "Sep 2019",
+      "endDate": "Jun 2023"
+    }
+  ],
+  "work": [
+    {
+      "website": "",
+      "highlights": [
+        "Maintaining the company security"
+      ],
+      "company": "Opai Movement",
+      "position": "Software engineer",
+      "location": "Puchong warehouse",
+      "startDate": "2025",
+      "endDate": "2040"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "Java",
+        "Html",
+        "Php"
+      ],
+      "name": "Programming language"
+    }
+  ],
+  "projects": [
+    {
+      "keywords": [
+        "Java",
+        "Html",
+        "Css"
+      ],
+      "name": "ATS Resume Checker",
+      "description": "A client can check their resume similarity score and can generate by filling the form.",
+      "url": "http://localhost:3000/generator/projects"
+    }
+  ],
+  "awards": [
+    {
+      "summary": "Test the level of cybersecurity of each participant's system",
+      "title": "Supreme Hacker",
+      "date": "May 2020",
+      "awarder": "Hackersz Mania"
+    }
+  ],
+  "headings": {
+    "education": "Education",
+    "work": "Work Experience",
+    "skills": "skills",
+    "projects": "Project",
+    "awards": "Award"
+  },
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}

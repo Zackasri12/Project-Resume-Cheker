@@ -82,7 +82,7 @@ header{
 .container {
     max-width: 700px;
     width: 100%;
-    background: rgba(10, 10, 10, 0.2); /* semi-transparent blue */
+    background: rgb(255, 251, 251); /* semi-transparent blue */
     padding: 25px 30px;
     border-radius: 12px;
     border: 1px solid rgba(20, 20, 20, 0.2);
@@ -146,3 +146,26 @@ form .button input{
     border: none;
     letter-spacing: 1px;
 }
+
+.back-btn {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #101011;
+    border: 1px solid #101011;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #101011;
+    color: white;
+}
+    

@@ -22,11 +22,14 @@ $payment_status = $_SESSION['payment_status'] ?? 'unpaid'; // fallback to 'unpai
 </head>
 <body>
     <header class="header">
-        <h2 class="logo">My Resume</h2>
+        <h2 class="logo">Resumake</h2>
         <nav class="navigation">
             <a href="home.php" class="active">Home</a>
-            <a href="about.html">About Us</a>
+            <a href="score_chart.php"> Match Score Chart</a>
+            <a href="resume_feedback.php"> Feedback</a>
             <a href="donate.html">Donate</a>
+            <a href="about.html">About Us</a>
+
             <span class="welcome-message">
                 Welcome, <?php echo $username; ?> (<?php echo ucfirst($payment_status); ?> Member)
             </span>
@@ -36,7 +39,7 @@ $payment_status = $_SESSION['payment_status'] ?? 'unpaid'; // fallback to 'unpai
 
     <div class="content">
         <div class="top-text">
-            <p>Transform your future with My Resume—tailored to help graduates rise to the top 10% of job candidates and impress any employer!</p>
+            <p>Transform your future with Resumake tailored to help graduates rise to the top 10% of job candidates and impress any employer!</p>
         </div>
 
         <div class="wrapper">
@@ -49,7 +52,9 @@ $payment_status = $_SESSION['payment_status'] ?? 'unpaid'; // fallback to 'unpai
                 <span class="icon"><ion-icon name="information-circle"></ion-icon><p>Suggest Important Skills</p></span>
                 <span class="icon"><ion-icon name="information-circle"></ion-icon><p>Analyze ATS Compatibility</p></span>
                 <span class="icon"><ion-icon name="information-circle"></ion-icon><p>Instant PDF Upload</p></span>
-                <a href="<?php echo ($payment_status === 'paid') ? 'upload.php' : 'payment.php'; ?>" class="btn-buy">Start Now</a>
+               <a href="javascript:void(0);" onclick="handleResumeMatcherClick('<?php echo $payment_status; ?>')" class="btn-buy">Generate</a>
+               <p style="color: white;" id="usage-left"></p>
+
             </div>
 
             <!-- ATS Resume -->
@@ -73,13 +78,45 @@ $payment_status = $_SESSION['payment_status'] ?? 'unpaid'; // fallback to 'unpai
                 <span class="icon"><ion-icon name="information-circle"></ion-icon><p>Designed for Easy Parsing</p></span>
                 <span class="icon"><ion-icon name="information-circle"></ion-icon><p>Includes Targeted Keywords</p></span>
                 <span class="icon"><ion-icon name="information-circle"></ion-icon><p>Editable & Tailored Templates</p></span>
-                <a href="<?php echo ($payment_status === 'paid') ? 'resume_sample.php' : 'payment.php'; ?>" class="btn-buy">Generate</a>
+                <a href="resume_sample.php" class="btn-buy">Visit</a>
+
             </div>
         </div>
-
+        
         <footer style="color:white; text-align:center; padding:10px;">&copy; 2025 My Resume Service</footer>
     </div>
 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+    var paymentStatus = "<?php echo $payment_status; ?>";
+    var username = "<?php echo $username; ?>"; // get from PHP session
+    var key = username + "_resume_match_count";
+
+    function updateUsageParagraph() {
+        if (paymentStatus === "unpaid") {
+            let count = parseInt(localStorage.getItem(key) || 0);
+            let left = Math.max(0, 3 - count);
+            document.getElementById("usage-left").innerText = "Free uses left: " + left + " / 3";
+        }
+    }
+
+    window.addEventListener('pageshow', updateUsageParagraph);
+
+    function handleResumeMatcherClick(paymentStatus) {
+        let count = parseInt(localStorage.getItem(key) || 0);
+
+        if (paymentStatus === "paid") {
+            window.location.href = "upload.php";
+        } else {
+            if (count >= 3) {
+                alert("You have used all 3 free tries. Please upgrade to continue.");
+                window.location.href = "payment.php";
+            } else {
+                count += 1;
+                localStorage.setItem(key, count);
+                window.location.href = "upload.php";
+            }
+        }
+    }
+</script>
 </body>
 </html>

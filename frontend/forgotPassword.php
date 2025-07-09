@@ -10,7 +10,7 @@
     <h1 class="page-title">Forgot Password</h1>
 
     <div class="container">
-        <form action="process_forgot_password.php" method="post">
+        <form action="processForgotPassword.php" method="post">
             <label>Enter your registered email:</label>
             <input type="email" name="email" required>
 

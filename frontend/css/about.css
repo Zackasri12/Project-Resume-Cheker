@@ -15,7 +15,7 @@ body {
     flex-direction: column; /* Add this */
     align-items: center;
     min-height: 100vh;
-    background: url('images/image.png') no-repeat;
+    background: url('images/image9.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -113,10 +113,17 @@ header{
 }
 .pic{
     width: 300px;
+    height:400px;
     margin: auto;              /* ✅ Center the image in its grid cell */
     display: block;
 }
 
+.title{
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
 
 
 

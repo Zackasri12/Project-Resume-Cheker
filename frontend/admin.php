@@ -22,15 +22,16 @@ $result = $conn->query("SELECT * FROM cust");
 <head>
     <meta charset="UTF-8">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="css/admin.css"> <!-- External CSS -->
+    <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
 <div class="container">
     <div class="top-bar">
         <h2>Admin Dashboard - User Management</h2>
-        <a href="register_admin.php" class="register-btn">➕ Register Admin</a>
-        <a href="admin_view_resume.php" class="register-btn">📄 View Resume Uploads</a>
-
+        <div>
+            <a href="register_admin.php" class="register-btn">➕ Register Admin</a>
+            <a href="admin_view_resume.php" class="register-btn">📄 View Resume Uploads</a>
+        </div>
     </div>
 
     <table>
